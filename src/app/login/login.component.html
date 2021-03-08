@@ -1,0 +1,25 @@
+<div class="col-md-4 offset-md-4">
+    <h4 class="bg-primary text-center text-white">Register</h4>
+    <form [formGroup]="loginForm" (ngSubmit)="signInUser(loginForm.value)">
+        <div>
+            <label>Email: </label>
+            <input type="text" 
+                class="form-control"
+                id="email"
+                formControlName="username"
+                name="email">
+        </div>
+        <div>
+            <label>Password: </label>
+            <input type="text" 
+                class="form-control"
+                id="password"
+                formControlName="password"
+                name="password">
+        </div>
+        <br>
+        <div>
+            <button class="btn btn-success" type="submit">Submit</button>
+        </div>
+    </form>
+</div>

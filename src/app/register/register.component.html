@@ -1,0 +1,41 @@
+<div class="col-md-4 offset-md-4">
+    <h4 class="bg-primary text-center text-white">Register</h4>
+    <form (ngSubmit)="onSubmit()">
+        <div>
+            <label>First Name: </label>
+            <input type="text" 
+                class="form-control"
+                id="firstName"
+                [(ngModel)]="user.firstName"
+                name="firstName">
+        </div>
+        <div>
+            <label>Last Name: </label>
+            <input type="text" 
+                class="form-control"
+                id="lastName"
+                [(ngModel)]="user.lastName"
+                name="lastName">
+        </div>
+        <div>
+            <label>Email: </label>
+            <input type="text" 
+                class="form-control"
+                id="email"
+                [(ngModel)]="user.email"
+                name="email">
+        </div>
+        <div>
+            <label>Password: </label>
+            <input type="text" 
+                class="form-control"
+                id="password"
+                [(ngModel)]="user.password"
+                name="password">
+        </div>
+        <br>
+        <div>
+            <button class="btn btn-success" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
